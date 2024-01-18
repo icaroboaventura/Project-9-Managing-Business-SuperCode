@@ -1,0 +1,102 @@
+@font-face {
+  font-family: "Anek Bangla";
+  src: url(../fonts/Anek_Bangla/AnekBangla-VariableFont_wdth.ttf);
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url(../fonts/Manrope/Manrope-VariableFont_wght.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --ff-anek: "Anek Bangla";
+  --ff-manrope: "Manrope";
+
+  --clr-black: #000;
+  --clr-white: #fff;
+  --clr-p: #757095;
+  --clr-p-light: #8593a3;
+  --clr-orangered: #f57059;
+
+  --fs-14: clamp(8px, 0.9vw + 1.6px, 14px);
+  --fs-20: clamp(10px, 1.3vw + 1.6px, 20px);
+}
+
+.body_wrapper {
+  max-width: 1440px;
+  margin-inline: auto;
+}
+
+a {
+  text-decoration: none;
+  color: var(--clr-black);
+  font-size: var(--fs-14);
+}
+
+h1,
+h2 {
+  color: var(--clr-black);
+  font-family: var(--ff-manrope);
+  font-weight: 800;
+  text-wrap: balance;
+}
+
+p {
+  font-family: var(--ff-manrope);
+  color: var(--clr-p);
+  text-wrap: pretty;
+}
+
+.logo {
+  font-family: "Anek Bangla";
+  font-weight: 700;
+  font-size: var(--fs-20);
+  margin-right: 30%;
+}
+
+nav svg {
+  display: none;
+}
+
+header {
+  padding: 2.8% 9.4% 0 9.4%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav_links {
+  display: flex;
+  gap: 23.3%;
+  white-space: nowrap;
+}
+
+.sign_start_links {
+  display: flex;
+  align-items: center;
+  gap: 30.1%;
+  white-space: nowrap;
+  justify-content: flex-start;
+  margin-left: 30%;
+}
+
+.btn_free {
+  background-color: var(--clr-orangered);
+  padding: 17.8% 36.6%;
+  border-radius: 40px;
+  color: var(--clr-white);
+}
+
+.nav_links a:nth-of-type(1)::after,
+.nav_links a:nth-of-type(2)::after {
+  content: url(../icons/down_arrow.svg);
+  margin-left: 20%;
+}
