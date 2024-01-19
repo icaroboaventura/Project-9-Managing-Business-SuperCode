@@ -45,7 +45,7 @@
   --fs-60: clamp(2.5rem, 4vw + 0.1rem, 3.75rem);
 }
 
-/* general styles */
+/* # general styles */
 
 * {
   margin: 0;
@@ -114,6 +114,12 @@ p {
   border-radius: 80px;
   color: var(--clr-white);
   box-shadow: 0px 38px 50px 0px rgba(5, 121, 107, 0.5);
+  transition: all 0.02s ease-in-out;
+}
+
+.btn_start:hover,
+.btn:hover {
+  transform: scale(1.02);
 }
 
 nav,
@@ -128,7 +134,7 @@ nav,
   padding-inline: 9%;
 }
 
-/* header styles */
+/* # header styles */
 
 header {
   background: linear-gradient(
@@ -138,7 +144,7 @@ header {
   );
 }
 
-/* nav styles */
+/* # nav styles */
 
 .logo {
   font-family: "Anek Bangla";
@@ -175,6 +181,7 @@ nav {
   padding: 1.0625rem 2.1875rem;
   border-radius: 40px;
   color: var(--clr-white);
+  transition: all 0.02s ease-in-out;
 }
 
 .nav_links a:nth-of-type(1)::after,
@@ -183,7 +190,7 @@ nav {
   margin-left: 0.625rem;
 }
 
-/* hero section styles */
+/* # hero section styles */
 
 .hero {
   display: flex;
@@ -238,7 +245,7 @@ nav {
   margin: 2.2% -6.1% 0 0;
 }
 
-/* companies section styles */
+/* # companies section styles */
 
 .companies h3 {
   text-align: center;
@@ -254,7 +261,7 @@ nav {
   margin: 0 5.5% 9.1% 5.5%;
 }
 
-/* services section styles */
+/* # services section styles */
 
 .our_services {
   display: flex;
@@ -326,7 +333,7 @@ nav {
   color: var(--clr-white);
 }
 
-/* process styles  */
+/* # process styles  */
 
 .process {
   display: flex;
@@ -354,7 +361,7 @@ nav {
   background: url(../icons/process_con_bg.svg) no-repeat center 4rem;
 }
 
-/* remove background by container wrap (1380px) */
+/* # remove background by container wrap (1380px) */
 
 @media only screen and (max-width: 1380px) {
   .process_container {
@@ -423,7 +430,7 @@ nav {
   font-size: 1rem;
 }
 
-/* app section styles */
+/* # app section styles */
 
 .app {
   display: flex;
@@ -448,7 +455,6 @@ nav {
 .download_btns {
   display: flex;
   align-items: center;
-  /* flex-direction: column; */
   gap: 1.25rem;
   margin-bottom: 7.8%;
 }
@@ -468,7 +474,7 @@ nav {
   padding: 1.2rem 3.7rem;
 }
 
-/* my lil garret section styles */
+/* # my lil garret section styles */
 
 .my_lil_garret {
   display: flex;
@@ -489,7 +495,15 @@ nav {
   margin-bottom: 10.8%;
 }
 
-/* pricing section styles */
+.my_lil_garret_content a {
+  display: inline-block;
+  transition: all 0.02s ease-in-out;
+}
+
+.my_lil_garret_content a:hover {
+  transform: scale(1.02);
+}
+/* # pricing section styles */
 
 .pricing {
   display: flex;
@@ -518,7 +532,7 @@ nav {
   margin-bottom: 16%;
 }
 
-/* free plan style  */
+/* # free plan style  */
 
 .plan {
   padding: 4.3%;
@@ -579,9 +593,14 @@ nav {
   border: 1px solid rgba(133, 147, 163, 0.32);
   box-shadow: 0px 8px 80px 0px rgba(5, 93, 255, 0.065);
   padding: 5% 20%;
+  transition: all 0.2s ease-in-out;
 }
 
-/* paid plan style */
+.plan a:hover {
+  transform: scale(1.02);
+}
+
+/* # paid plan style */
 
 .plan:nth-of-type(2) {
   background-color: var(--clr-green);
@@ -610,7 +629,7 @@ nav {
   box-shadow: 0px 48px 80px 0px rgba(0, 0, 0, 0.4);
 }
 
-/* testimonials section styles */
+/* # testimonials section styles */
 
 .testimonials h2 {
   margin-bottom: 3.3%;
@@ -659,7 +678,7 @@ nav {
   margin-bottom: 0;
 }
 
-/* discover section style  */
+/* # discover section style  */
 
 .discover {
   display: flex;
@@ -700,7 +719,7 @@ nav {
   left: 12%;
 }
 
-/* footer styles */
+/* # footer styles */
 
 .topics {
   display: flex;
@@ -739,11 +758,13 @@ nav {
   font-size: var(--fs-24);
 }
 
-/* media queries */
+/* # media queries */
 
-/* tablet size */
+/* # tablet size */
 
 @media only screen and (max-width: 767px) {
+  /* # header  */
+
   nav svg {
     display: block;
   }
@@ -777,9 +798,13 @@ nav {
     max-width: 60%;
   }
 
+  /* # app  */
+
   .download_btns {
     flex-direction: column;
   }
+
+  /* # my_lil_garret  */
 
   .my_lil_garret {
     flex-direction: column;
@@ -802,6 +827,8 @@ nav {
     align-items: center;
   }
 
+  /* # testimonials */
+
   .testimonials_content {
     flex-direction: column;
   }
@@ -816,6 +843,8 @@ nav {
     max-width: 60%;
   }
 
+  /* # footer */
+
   .topics {
     text-align: center;
     flex-direction: column;
@@ -829,7 +858,7 @@ nav {
   }
 }
 
-/* phone size */
+/* # phone size */
 
 @media only screen and (max-width: 480px) {
   .sign_start_links {
