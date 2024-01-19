@@ -657,3 +657,43 @@ nav {
   font-weight: 500;
   margin-bottom: 0;
 }
+
+/* discover section style  */
+
+.discover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20%;
+}
+
+.discover article {
+  max-width: 73.125rem;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--clr-green);
+  padding: 7.5% 14.1%;
+  border-radius: 1rem;
+  position: relative;
+}
+
+.discover article h2 {
+  max-width: 47.6875rem;
+  font-size: var(--fs-60);
+  color: var(--clr-white);
+  margin-bottom: 5.3%;
+}
+
+.discover article a {
+  background-color: var(--clr-orangered);
+  align-self: center;
+  text-align: center;
+  font-family: var(--ff-anek);
+  font-size: var(--fs-18);
+}
+
+.discover article svg {
+  position: absolute;
+  top: 13%;
+  left: 12%;
+}
