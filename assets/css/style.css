@@ -34,12 +34,12 @@
 
   --fs-12: clamp(0.5rem, 0.8vw + 0.1rem, 0.75rem);
   --fs-14: clamp(0.75rem, 0.9vw + 0.1rem, 0.875rem);
-  --fs-16: clamp(0.625rem, 1.1vw + 0.1rem, 1rem);
-  --fs-18: clamp(0.625rem, 1.2vw + 0.1rem, 1.125rem);
-  --fs-20: clamp(0.625rem, 1.3vw + 0.1rem, 1.25rem);
-  --fs-22: clamp(0.625rem, 1.4vw + 0.1rem, 1.375rem);
-  --fs-24: clamp(0.625rem, 1.5vw + 0.1rem, 1.5rem);
-  --fs-26: clamp(0.625rem, 1.6vw + 0.1rem, 1.625rem);
+  --fs-16: clamp(0.75rem, 1.1vw + 0.1rem, 1rem);
+  --fs-18: clamp(0.9rem, 1.2vw + 0.1rem, 1.125rem);
+  --fs-20: clamp(1rem, 1.3vw + 0.1rem, 1.25rem);
+  --fs-22: clamp(1.125rem, 1.4vw + 0.1rem, 1.375rem);
+  --fs-24: clamp(1.25rem, 1.5vw + 0.1rem, 1.5rem);
+  --fs-26: clamp(1.375rem, 1.6vw + 0.1rem, 1.625rem);
   --fs-40: clamp(1.875rem, 2.7vw + 0.1rem, 2.5rem);
   --fs-60: clamp(2.5rem, 4vw + 0.1rem, 3.75rem);
 }
@@ -103,6 +103,7 @@ p {
   text-wrap: pretty;
   line-height: 2.1875em;
   letter-spacing: -0.025rem;
+  font-size: var(--fs-20);
 }
 
 .btn {
@@ -119,7 +120,8 @@ nav,
 .services_con,
 .process,
 .app,
-.my_lil_garret {
+.my_lil_garret,
+.pricing {
   padding-inline: 9%;
 }
 
@@ -225,7 +227,7 @@ nav {
   font-size: var(--fs-16);
   color: var(--clr-p-light);
   line-height: 1.5625em;
-  letter-spacing: -0.05rem;
+  letter-spacing: -0.03rem;
   font-weight: 100;
 }
 
@@ -482,4 +484,125 @@ nav {
 
 .my_lil_garret p {
   margin-bottom: 10.8%;
+}
+
+/* pricing section styles */
+
+.pricing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url(../imgs/pricing_bg.png) right no-repeat;
+}
+
+.pricing h2 {
+  max-width: 40.9375rem;
+  margin-bottom: 2.7%;
+}
+
+.pricing p {
+  text-align: center;
+  max-width: 35rem;
+  margin-bottom: 5.1%;
+}
+
+.plans {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 16%;
+}
+
+/* free plan style  */
+
+.plan {
+  padding: 4.3%;
+  max-width: 22.625rem;
+  border-radius: 1rem;
+  box-shadow: 0px 8px 80px 0px rgba(167, 167, 167, 0.24);
+  display: flex;
+  flex-direction: column;
+  background-color: var(--clr-white);
+}
+
+.plan p {
+  text-align: start;
+  font-size: var(--fs-16);
+  color: var(--clr-p-light);
+  margin-bottom: 8%;
+}
+
+.plan p:nth-of-type(1) {
+  text-transform: uppercase;
+  color: var(--clr-green);
+}
+
+.plan p:nth-of-type(2) span {
+  color: var(--clr-black);
+  font-size: var(--fs-60);
+  font-weight: 700;
+}
+
+.plan p:nth-of-type(2) {
+  font-weight: 700;
+}
+
+.plan p:nth-of-type(3) {
+  border-bottom: 1px solid rgba(133, 147, 163, 0.178);
+  padding-bottom: 10%;
+}
+
+.plan p:nth-of-type(4)::before,
+.plan p:nth-of-type(5)::before {
+  content: url(../icons/check-circle.svg);
+  margin: 0 5% 0 0;
+  vertical-align: -20%;
+}
+
+.plan p:nth-of-type(6)::before,
+.plan p:nth-of-type(7)::before {
+  content: url(../icons/cross-circle.svg);
+  margin: 0 5% 0 0;
+  vertical-align: -20%;
+}
+
+.plan a {
+  text-align: center;
+  font-size: var(--fs-18);
+  color: var(--clr-p-light);
+  border-radius: 80px;
+  border: 1px solid rgba(133, 147, 163, 0.32);
+  box-shadow: 0px 8px 80px 0px rgba(5, 93, 255, 0.065);
+  padding: 5% 20%;
+}
+
+/* paid plan style */
+
+.plan:nth-of-type(2) {
+  background-color: var(--clr-green);
+}
+
+.plan:nth-of-type(2) p {
+  color: var(--clr-white);
+}
+
+.plan:nth-of-type(2) p:nth-of-type(2) span {
+  color: var(--clr-white);
+}
+
+.plan:nth-of-type(2) p:nth-of-type(4)::before,
+.plan:nth-of-type(2) p:nth-of-type(5)::before,
+.plan:nth-of-type(2) p:nth-of-type(6)::before,
+.plan:nth-of-type(2) p:nth-of-type(7)::before {
+  content: url(../icons/check-circle-white.svg);
+  margin: 0 5% 0 0;
+  vertical-align: -20%;
+}
+
+.plan:nth-of-type(2) a {
+  background-color: var(--clr-white);
+  color: var(--clr-black);
+  box-shadow: 0px 48px 80px 0px rgba(0, 0, 0, 0.4);
 }
