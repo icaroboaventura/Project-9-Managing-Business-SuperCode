@@ -17,6 +17,7 @@
   font-family: "B612";
   src: url(../fonts/B612_Mono/B612Mono-Bold.ttf);
 }
+
 :root {
   --ff-anek: "Anek Bangla";
   --ff-manrope: "Manrope";
@@ -43,7 +44,7 @@
   --fs-60: clamp(2.5rem, 4vw + 0.1rem, 3.75rem);
 }
 
-/* # general styles */
+/* general styles */
 
 * {
   margin: 0;
@@ -116,11 +117,12 @@ p {
 nav,
 .hero,
 .services_con,
-.process {
+.process,
+.app {
   padding-inline: 9%;
 }
 
-/* # header styles */
+/* header styles */
 
 header {
   background: linear-gradient(
@@ -130,7 +132,7 @@ header {
   );
 }
 
-/* # nav styles */
+/* nav styles */
 
 .logo {
   font-family: "Anek Bangla";
@@ -175,7 +177,7 @@ nav {
   margin-left: 0.625rem;
 }
 
-/* # hero section styles */
+/* hero section styles */
 
 .hero {
   display: flex;
@@ -230,7 +232,7 @@ nav {
   margin: 2.2% -6.1% 0 0;
 }
 
-/* # companies section styles */
+/* companies section styles */
 
 .companies h3 {
   text-align: center;
@@ -246,7 +248,7 @@ nav {
   margin: 0 5.5% 9.1% 5.5%;
 }
 
-/* # services section styles */
+/* services section styles */
 
 .our_services {
   display: flex;
@@ -318,7 +320,7 @@ nav {
   color: var(--clr-white);
 }
 
-/* # process styles  */
+/* process styles  */
 
 .process {
   display: flex;
@@ -346,7 +348,7 @@ nav {
   background: url(../icons/process_con_bg.svg) no-repeat center 4rem;
 }
 
-/* - remove background */
+/* remove background by container wrap (1366px) */
 
 @media only screen and (max-width: 1366px) {
   .process_container {
@@ -413,4 +415,49 @@ nav {
 
 .p_two {
   font-size: 1rem;
+}
+
+/* app section styles */
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.app h4 {
+  color: var(--clr-orangered);
+}
+
+.app h2 {
+  max-width: 43.75rem;
+}
+
+.app p {
+  margin-block: 1.7%;
+}
+
+.download_btns {
+  display: flex;
+  align-items: center;
+  /* flex-direction: column; */
+  gap: 1.25rem;
+  margin-bottom: 7.8%;
+}
+
+.download_btns a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+.download_btns a:nth-of-type(1) {
+  background-color: var(--clr-orangered);
+  box-shadow: none;
+  gap: 10px;
+  padding: 1.2rem 3.7rem;
 }
