@@ -12,15 +12,6 @@
   font-family: "Acme";
   src: url(../fonts/Acme/Acme-Regular.ttf);
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-img {
-  max-width: 100%;
-}
 
 :root {
   --ff-anek: "Anek Bangla";
@@ -44,9 +35,19 @@ img {
   --fs-60: clamp(2.5rem, 4vw + 0.1rem, 3.75rem);
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .body_wrapper {
   max-width: 1440px;
   margin-inline: auto;
+}
+
+img {
+  max-width: 100%;
 }
 
 a {
@@ -61,7 +62,7 @@ h2 {
   color: var(--clr-black);
   font-family: var(--ff-manrope);
   font-weight: 800;
-  text-wrap: balance;
+  letter-spacing: -0.1125rem;
 }
 
 h1 {
@@ -78,12 +79,22 @@ p {
   color: var(--clr-p);
   text-wrap: pretty;
   line-height: 2.1875em;
+  letter-spacing: -0.025rem;
+}
+
+.btn {
+  font-size: var(--fs-18);
+  background-color: var(--clr-green);
+  padding: 1rem 3rem;
+  border-radius: 80px;
+  color: var(--clr-white);
+  box-shadow: 0px 38px 50px 0px rgba(5, 121, 107, 0.5);
 }
 
 nav,
 .hero,
 footer {
-  padding-inline: 9.4%;
+  padding-inline: 9%;
 }
 
 header {
@@ -92,6 +103,7 @@ header {
     rgb(255, 255, 255) 60%,
     rgba(15, 209, 186, 0.21) 100%
   );
+  /* min-height: 100svh; */
 }
 
 .logo {
@@ -138,18 +150,19 @@ nav {
 }
 
 .hero {
+  /* display: grid;
+  grid-template-columns: repeat(2, 1fr); */
   display: flex;
-  justify-content: space-between;
 }
 
 .text_hero {
-  width: 60%;
   display: flex;
   flex-direction: column;
+  max-width: 47%;
 }
 
 .text_hero h3 {
-  margin-top: 20%;
+  padding-top: 18%;
 }
 
 .text_hero p {
@@ -158,36 +171,32 @@ nav {
 
 .text_hero a {
   align-self: flex-start;
-  margin-block: 10%;
-}
-
-.btn {
-  font-size: var(--fs-18);
-  background-color: var(--clr-green);
-  padding: 1rem 3rem;
-  border-radius: 80px;
-  color: var(--clr-white);
-  box-shadow: 0px 38px 50px 0px rgba(5, 121, 107, 0.5);
+  margin-block: 7% 9.5%;
 }
 
 .stats {
   display: flex;
 }
 
+.users,
+.saved {
+  max-width: 50%;
+}
+
 .stats p:nth-of-type(1) {
-  max-width: 14.6875rem;
   font-size: var(--fs-26);
   font-weight: 700;
   color: var(--clr-black);
+  letter-spacing: -0.0813rem;
 }
 
 .stats p:nth-of-type(2) {
-  max-width: 14.6875rem;
   font-size: var(--fs-16);
   color: var(--clr-p-light);
   line-height: 1.5625em;
+  letter-spacing: -0.05rem;
 }
 
 .img_hero {
-  margin: 3.5% -4% 0 0;
+  margin: 2.2% -6.1% 0 0;
 }
