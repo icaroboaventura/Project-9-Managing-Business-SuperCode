@@ -35,6 +35,8 @@
   --fs-60: clamp(2.5rem, 4vw + 0.1rem, 3.75rem);
 }
 
+/* # general styles */
+
 * {
   margin: 0;
   padding: 0;
@@ -93,9 +95,11 @@ p {
 
 nav,
 .hero,
-footer {
+main {
   padding-inline: 9%;
 }
+
+/* # header styles */
 
 header {
   background: linear-gradient(
@@ -103,8 +107,9 @@ header {
     rgb(255, 255, 255) 60%,
     rgba(15, 209, 186, 0.21) 100%
   );
-  /* min-height: 100svh; */
 }
+
+/* # nav styles */
 
 .logo {
   font-family: "Anek Bangla";
@@ -149,9 +154,9 @@ nav {
   margin-left: 0.625rem;
 }
 
+/* # hero section styles */
+
 .hero {
-  /* display: grid;
-  grid-template-columns: repeat(2, 1fr); */
   display: flex;
 }
 
@@ -199,4 +204,23 @@ nav {
 
 .img_hero {
   margin: 2.2% -6.1% 0 0;
+  margin-bottom: 3.5%;
+}
+
+/* # companies section styles */
+
+.companies h3 {
+  text-align: center;
+  margin-bottom: 3.1%;
+}
+
+.logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.125rem;
+  flex-wrap: wrap;
+  margin-inline: 5.5%;
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(8.5625rem, 2fr)); */
 }
