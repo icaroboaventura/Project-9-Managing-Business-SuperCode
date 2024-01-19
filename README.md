@@ -4,7 +4,7 @@
  **Week:** 5  
  **Project Nr.:** 9  
  **Project Name:** Managing Business  
- **Project Link:** https://icaroboaventura.github.io/Project-7-Design-Critique-SuperCode/](https://icaroboaventura.github.io/Project-9-Managing-Business-SuperCode/     
+ **Project Link:** https://icaroboaventura.github.io/Project-9-Managing-Business-SuperCode/     
  **Project goal:** to put into practice what I learned in 5 weeks of the bootcamp.  
 `Topics like:`  
 - Semantic HTML
